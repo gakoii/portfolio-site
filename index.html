@@ -1,66 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gino Ako | Embedded Engineer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-50 text-gray-900">
-  <header class="p-6 bg-white shadow">
-    <div class="max-w-5xl mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">Gino Ako</h1>
-      <nav>
-        <a href="#projects" class="mr-4 hover:underline">Projects</a>
-        <a href="#contact" class="hover:underline">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gino Ako | Embedded Systems Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.css" rel="stylesheet" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      @keyframes fade-in {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+        animation: fade-in 1s ease-out both;
+      }
+    </style>
+  </head>
+  <body class="text-white font-sans min-h-screen bg-gradient-to-br from-blue-900 via-slate-900 to-red-800 bg-fixed bg-cover">
 
-  <section class="py-12 text-center">
-    <h2 class="text-3xl font-semibold">Embedded & Full-Stack Systems Engineer</h2>
-    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-      Blending low-level firmware, system architecture, and cloud-integrated interfaces to build scalable, real-world smart products.
-    </p>
-  </section>
+    <section class="py-16 text-white bg-no-repeat bg-cover bg-center" style="background-image: url('images/headshots/header.jpeg');">
+      <div class="max-w-7xl mx-auto bg-black/50 backdrop-blur-md rounded-xl p-8 flex flex-col md:flex-row items-center md:items-start gap-10 shadow-lg animate-fade-in">
 
-  <section id="projects" class="bg-white py-12">
-    <div class="max-w-5xl mx-auto px-4">
-      <h3 class="text-2xl font-bold mb-8">Key Projects</h3>
+        <!-- Profile Image and Name -->
+        <div class="bg-white/10 p-6 rounded-lg shadow-md flex flex-col items-center">
+          <img src="images/headshots/gino_headshot_straight.png" alt="Gino Ako" class="w-56 h-56 object-cover rounded-full border-4 border-black shadow-lg" />
+          <h1 class="text-4xl font-bold mt-4 tracking-tight text-white bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent drop-shadow-sm font-sans">Gino Ako</h1>
+        </div>
 
-      <div class="mb-10">
-        <h4 class="text-xl font-semibold">Smart Griddle Architecture @ Midea</h4>
-        <p class="text-gray-700">Researched and architected embedded system logic using in-house UI/control MCUs; defined scalable thermal sensing and knob-display interaction plan adopted by R&D leadership.</p>
+        <!-- About Text Right -->
+        <div class="bg-black/60 p-6 rounded-lg shadow-md">
+          <h2 class="text-4xl font-extrabold mb-2 font-mono tracking-tight">Computer Engineer · Systems Builder · Problem Solver</h2>
+          <p class="text-md italic text-gray-300 mb-4">
+            Building the systems that connect code, hardware, and people.
+          </p>
+          <p class="text-lg max-w-xl">
+            I design and build real-world systems — from low-level firmware and sensor interfaces to web-based dashboards, OTA platforms, and scalable IoT architectures. My work bridges embedded software, full-stack development, and smart product design.
+          </p>
+          <div class="mt-6 flex gap-6">
+            <a href="https://www.linkedin.com/in/ginoako/" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-800 transition text-sm font-semibold shadow">
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8.5h5v14H0v-14zm7.5 0h4.7v1.9h.1c.7-1.3 2.4-2.7 5-2.7 5.4 0 6.4 3.5 6.4 8v9.1h-5v-8.1c0-2-.1-4.5-3-4.5-3 0-3.5 2.2-3.5 4.4v8.2h-5V8.5z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/gakoii" target="_blank" class="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-900 transition text-sm font-semibold shadow">
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.38 0 12a12 12 0 008.21 11.45c.6.11.82-.26.82-.58v-2.17c-3.34.73-4.04-1.61-4.04-1.61a3.18 3.18 0 00-1.34-1.76c-1.1-.76.08-.75.08-.75a2.52 2.52 0 011.84 1.24 2.56 2.56 0 003.49 1 2.58 2.58 0 01.76-1.61c-2.67-.3-5.47-1.34-5.47-5.95a4.64 4.64 0 011.24-3.22 4.32 4.32 0 01.12-3.18s1-.33 3.3 1.24a11.42 11.42 0 016 0c2.3-1.57 3.3-1.24 3.3-1.24a4.32 4.32 0 01.12 3.18 4.64 4.64 0 011.24 3.22c0 4.61-2.8 5.65-5.47 5.95a2.88 2.88 0 01.82 2.24v3.32c0 .32.21.7.82.58A12 12 0 0024 12c0-6.62-5.38-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="Gino_Ako_Embedded_Software_Engineer.pdf" download class="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition text-sm font-semibold shadow">
+              <svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 16.5l4.5-4.5h-3v-6h-3v6h-3l4.5 4.5zM5 18v2h14v-2H5z"/></svg>
+              Resume
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projects" class="py-16 px-4 max-w-7xl mx-auto">
+      <h4 class="text-2xl font-extrabold tracking-wide uppercase text-white mb-8 border-b-2 border-cyan-500 pb-2">Featured Projects</h4>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div data-aos="fade-up" class="bg-white/90 backdrop-blur-md rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ease-in-out">
+          <h4 class="text-lg font-bold text-black mb-1">SHALL – Smart LED Adapter</h4>
+          <p class="text-gray-600 text-sm">Designed ESP32-S3 Matter-compliant LED controller with audio reactivity, TFT GUI, Spotify/Weather sync, and Apple/Google/Alexa support.</p>
+        </div>
+        <div data-aos="fade-up" class="bg-white/90 backdrop-blur-md rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ease-in-out">
+          <h4 class="text-lg font-bold text-black mb-1">ESP32 OTA & Logging System</h4>
+          <p class="text-gray-600 text-sm">Built OTA update system with WebSocket + TCP feedback, ESP-IDF FreeRTOS, SHA256 validation, and real-time browser status monitoring.</p>
+        </div>
+        <div data-aos="fade-up" class="bg-white/90 backdrop-blur-md rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ease-in-out">
+          <h4 class="text-lg font-bold text-black mb-1">Smart Griddle Architecture</h4>
+          <p class="text-gray-600 text-sm">Architected control/display logic using in-house UI/control MCUs for smart thermal sensing and touch+knob interfaces; aligned with team R&D roadmap.</p>
+        </div>
       </div>
 
-      <div class="mb-10">
-        <h4 class="text-xl font-semibold">ESP32 OTA + Logging Platform</h4>
-        <p class="text-gray-700">Developed OTA and UART routing system for ESP32 + STM32; integrated WebSocket/TCP interfaces and MegunoLink logging across multi-MCU architecture.</p>
+      <h4 class="text-2xl font-extrabold tracking-wide uppercase text-white mb-8 border-b-2 border-cyan-500 pb-2">Other Projects</h4>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div data-aos="fade-up" class="bg-white/90 backdrop-blur-md rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ease-in-out">
+          <h4 class="text-lg font-bold text-black mb-1">Real-Time Smart Alert System</h4>
+          <p class="text-gray-600 text-sm">ESP32 motion detector with under 2s latency, I2C MPU-6050, ThingSpeak alerts, and voice control via IFTTT + Google Assistant.</p>
+        </div>
+        <div data-aos="fade-up" class="bg-white/90 backdrop-blur-md rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ease-in-out">
+          <h4 class="text-lg font-bold text-black mb-1">Smart Dryer Firmware (Midea)</h4>
+          <p class="text-gray-600 text-sm">Refactored ARM-based C++ firmware to cut energy by 19%, drying time by 12%. Integrated ADC-based moisture control for UL compliance.</p>
+        </div>
+        <div data-aos="fade-up" class="bg-white/90 backdrop-blur-md rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ease-in-out">
+          <h4 class="text-lg font-bold text-black mb-1">Washer-Dryer Bluetooth Sync</h4>
+          <p class="text-gray-600 text-sm">Engineered Bluetooth comm between washer/dryer for adaptive cycle control via sensor fusion: fabric, water, spin-speed awareness.</p>
+        </div>
       </div>
+    </section>
 
-      <div class="mb-10">
-        <h4 class="text-xl font-semibold">SHALL – Smart Home Adapter for LED Lights</h4>
-        <p class="text-gray-700">Designed ESP32-S3 IoT adapter with Matter protocol support, audio-reactive LEDs, and a Node.js backend for Spotify sync and weather-based ambient lighting.</p>
-      </div>
+    <footer class="text-center text-sm text-gray-500 py-6 bg-white">
+      © 2025 Gino Ako.
+    </footer>
 
-    </div>
-  </section>
-
-  <section id="contact" class="py-12 bg-gray-100">
-    <div class="max-w-3xl mx-auto px-4 text-center">
-      <h3 class="text-2xl font-bold mb-4">Contact Me</h3>
-      <p class="mb-6 text-gray-600">Open to full-time embedded, IoT, and systems roles. Reach out below or explore my work.</p>
-      <a href="mailto:ginoako13@gmail.com" class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Email Me</a>
-      <div class="mt-6 space-x-4">
-        <a href="https://github.com/gakoii" target="_blank" class="text-blue-700 hover:underline">GitHub</a>
-        <a href="https://linkedin.com/in/ginoako" target="_blank" class="text-blue-700 hover:underline">LinkedIn</a>
-        <a href="/Gino_Ako_Embedded_Software_Engineer.pdf" class="text-blue-700 hover:underline">Resume</a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="text-center text-sm text-gray-500 py-6">
-    © 2025 Gino Ako. Built with TailwindCSS.
-  </footer>
-</body>
+    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+  </body>
 </html>
